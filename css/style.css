@@ -1,9 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 820px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+    background-color: yellow;
+    position: relative;
+}
+
+p {
+    color: black;
 }
 
 html {
@@ -82,33 +120,6 @@ body, input, textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 2rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form {
-    width: 100%;
-    max-width: 820px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.contact-form {
-    background-color: yellow;
-    position: relative;
-}
 
 .contact-form::before {
     content: "";
@@ -128,7 +139,7 @@ form{
     position: relative;
 }
 
-.title{
+.title {
     color: black;
     font-weight: 500;
     font-size: 1.5rem;
@@ -136,12 +147,12 @@ form{
     margin-bottom: 0.7rem;
 }
 
-.input-container{
+.input-container {
     position: relative;
     margin: 1rem 0;
 }
 
-.input{
+.input {
     width: 100%;
     outline: none;
     border: 2px solid black;
@@ -155,7 +166,15 @@ form{
     transition: 0.3s;
 }
 
-textarea{
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+/*textarea {
     color: black;
     padding: 0.8rem 1.2rem;
     min-height: 150px;
@@ -163,9 +182,9 @@ textarea{
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
-}
+}*/
 
-.input-container label{
+.input-container label {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -179,12 +198,12 @@ textarea{
     transition: 0.5s;
 }
 
-.input-container.textarea label{
+.input-container.textarea label {
     top: 1rem;
     transform: translateY(0);
 }
 
-.btn{
+.btn {
     padding: 0.6rem 1.3rem;
     background-color: white;
     border: 2px solid #24252A;
@@ -198,12 +217,12 @@ textarea{
     margin: 0;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: transparent;
     color: yellow;
 }
 
-.input-container span{
+.input-container span {
     position: absolute;
     top: 0;
     left: 25px;
@@ -216,7 +235,7 @@ textarea{
 }
 
 .input-container span:before,
-.input-container span:after{
+.input-container span:after {
     content: "";
     position: absolute;
     width: 10%;
@@ -228,14 +247,14 @@ textarea{
     transform: translateY(-50%);
 }
 
-.input-container span:before{
+.input-container span:before {
     left: 50%;
 }
-.input-container span:after{
+.input-container span:after {
     right: 50%;
 }
 
-.input-container.focus label{
+.input-container.focus label {
     top: 0;
     transform: translateY(-50%);
     left: 25px;
@@ -243,7 +262,59 @@ textarea{
 }
 
 .input-container.focus span:before,
-.input-container.focus span:after{
+.input-container.focus span:after {
     width: 50;
     opacity: 1;
+}
+
+.contact-info {
+    padding: 2.3rem 2.2rem;
+    position: relative;    
+}
+
+.contact-info .title {
+    color: #24252A;
+}
+
+.text {
+    color: #24252A;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+    display: flex;
+    color: #24252A;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.icon {
+    width: 25px;
+    margin-right: 0.7rem;
+}
+
+.social-media {
+    padding: 2rem 0 0 0;
+}
+
+.social-media p {
+    color: #24252A;
+}
+
+.social.icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.social-media a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #24252A, black);
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
 }
