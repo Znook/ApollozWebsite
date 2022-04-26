@@ -9,7 +9,7 @@
 body,
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -39,87 +39,6 @@ textarea {
     background-color: yellow;
     position: relative;
 }
-
-p {
-    color: black;
-}
-
-html {
-    background-color: #24252A;
-}
-
-.main_header {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-button{
-    padding: 0;
-    color: black;
-    background-color: transparent;;
-    border: none;
-    border-radius: none;
-}
-
-.cta {
-    padding: 9px 25px;
-    color: black;
-    background-color: yellow;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3 ease 0s;
-}
-
-.cta:hover {
-    background-color: transparent;
-}
-
-.main_nav {
-    text-align: center;
-    font: 1.1em;
-    font-weight: lighter;
-}
-
-.nav ul {
-    margin: 0;
-}
-
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    background-color: transparent;
-}
-
-.media_scroller {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 25%;
-}
-
-body, input, textarea {
-    font-family: 'Open Sans', sans-serif;
-}
-
 
 .contact-form::before {
     content: "";
@@ -317,4 +236,76 @@ textarea.input {
     line-height: 35px;
     margin-right: 0.5rem;
     transition: 0.3s;
+}
+
+/*-----INDEX-----*/
+
+p {
+    color: black;
+}
+
+html {
+    background-color: #24252A;
+}
+
+.main_header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+button{
+    padding: 0;
+    color: black;
+    background-color: transparent;;
+    border: none;
+    border-radius: none;
+}
+
+.cta {
+    padding: 9px 25px;
+    color: black;
+    background-color: yellow;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+.cta:hover {
+    background-color: transparent;
+}
+
+.main_nav {
+    text-align: center;
+    font: 1.1em;
+    font-weight: lighter;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: transparent;
 }
