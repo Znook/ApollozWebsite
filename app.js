@@ -5,6 +5,14 @@ function focusFunc() {
     parent.classList.add("focus");
 }
 
+function blueFunc() {
+    let parent = this.parentNode;
+    if(this.value == ""){
+        parent.classList.remove("focus")
+    }
+}
+
 inputs.forEach((input) => {
-    input.addEventListener("focus", focusFunc)
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blue", blueFunc);
 });
