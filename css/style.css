@@ -235,7 +235,7 @@ textarea{
     right: 50%;
 }
 
-.input-container.focus{
+.input-container.focus label{
     top: 0;
     transform: translateY(-50%);
     left: 25px;
@@ -244,6 +244,6 @@ textarea{
 
 .input-container.focus span:before,
 .input-container.focus span:after{
-    width: 50%;
+    width: 50;
     opacity: 1;
 }
