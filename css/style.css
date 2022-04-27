@@ -212,7 +212,7 @@ textarea.input {
     color: #24252A;
 }
 
-.social.icons {
+.social-icons {
     display: flex;
     margin-top: 0.5rem;
 }
@@ -221,15 +221,15 @@ textarea.input {
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #24252A, white);
-    color: white;
+    background: linear-gradient(45deg, #FFF000, #ebdb00);
+    color: #24252A;
     text-align: center;
     line-height: 35px;
     margin-right: 0.5rem;
     transition: 0.3s;
 }
 
-.social.icons a:hover {
+.social-icons a:hover {
     transform: scale(1.05);
 }
 
