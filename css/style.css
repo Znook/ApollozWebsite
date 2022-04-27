@@ -17,7 +17,7 @@ textarea {
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-color: #24252A;
+    background-color: whitesmoke;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ textarea {
 }
 
 .contact-form {
-    background-color: yellow;
+    background-color: #FFF000;
     position: relative;
 }
 
@@ -46,7 +46,7 @@ textarea {
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: yellow;
+    background-color: #FFF000;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -129,7 +129,7 @@ textarea.input {
 
 .btn:hover {
     background-color: transparent;
-    color: yellow;
+    color: #333;
 }
 
 .input-container span {
@@ -152,7 +152,7 @@ textarea.input {
     opacity: 0;
     transition: 0.3s;
     height: 5px;
-    background-color: yellow;
+    background-color: #FFF000;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -187,7 +187,7 @@ textarea.input {
 }
 
 .text {
-    color: #24252A;
+    color: #24252acc;
     margin: 1.5rem 0 2rem 0;
 }
 
@@ -200,7 +200,7 @@ textarea.input {
 }
 
 .icon {
-    width: 25px;
+    width: 28px;
     margin-right: 0.7rem;
 }
 
@@ -276,7 +276,7 @@ button{
 .cta {
     padding: 9px 25px;
     color: black;
-    background-color: yellow;
+    background-color: #FFF000;;
     border: none;
     border-radius: 50px;
     cursor: pointer;
