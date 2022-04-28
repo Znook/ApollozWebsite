@@ -53,25 +53,25 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form action="index.html" autocomplete="off">
+                <form action="contact.html" autocomplete="off" onsubmit="sendEmail(); reset();">
                     <h3 class="title">Contact us</h3>
                     <div class="input-container">
-                        <input type="text" name="Name" class="input"/>
+                        <input type="name" id="Name" name="Name" class="input"/>
                         <label for="">Name</label>
                         <span>Name</span>
                     </div>
                     <div class="input-container">
-                        <input type="Phone" name="Phone" class="input"/>
+                        <input type="Phone" id="Phone" name="Phone" class="input"/>
                         <label for="">Phone</label>
                         <span>Phone</span>
                     </div>
                     <div class="input-container">
-                        <input type="Email" name="Email" class="input"/>
+                        <input type="Email" id="Email" name="Email" class="input"/>
                         <label for="">Email</label>
                         <span>Email</span>
                     </div>
                     <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
+                        <textarea id="Message" name="Message" class="input"></textarea>
                         <label for="">Message</label>
                         <span>Message</span>
                       </div>
@@ -85,13 +85,19 @@
     <script>
         function sendEmail(){
             Email.send({
-                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-                To : 'them@website.com',
-                From : "you@isp.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
+                Host : "smtp.gmail.com",
+                Username : "apollozfoto@gmail.com",
+                Password : "qwerty123456!",
+                To : 'apollozfoto@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact form Enquiry",
+                Body : "Name: " + document.getElementById("Name").value
+                    + "<br> Email: " + document.getElementById("Email").value
+                    + "<br> Phone: " + document.getElementById("Phone").value
+                    + "<br> Message: " + document.getElementById("Message").value 
+
             }).then(
-            message => alert(message)
+            message => alert("Thank you for contacting us!")
             );
         }
     </script>
