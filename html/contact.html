@@ -53,7 +53,7 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form action="contact.html" autocomplete="off" onsubmit="sendEmail(); reset();">
+                <form action="https://formsubmit.co/c5c433cd3f14a365716a5fa9fb86e7e6" method="POST" autocomplete="off">
                     <h3 class="title">Contact us</h3>
                     <div class="input-container">
                         <input type="name" id="Name" name="Name" class="input"/>
@@ -81,25 +81,5 @@
         </div>
     </div>
     <script src="/script/app.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "apollozfoto@gmail.com",
-                Password : "qwerty123456!",
-                To : 'apollozfoto@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact form Enquiry",
-                Body : "Name: " + document.getElementById("Name").value
-                    + "<br> Email: " + document.getElementById("Email").value
-                    + "<br> Phone: " + document.getElementById("Phone").value
-                    + "<br> Message: " + document.getElementById("Message").value 
-
-            }).then(
-            message => alert("Thank you for contacting us!")
-            );
-        }
-    </script>
 </body>
 </html>
