@@ -248,7 +248,7 @@ p {
 }
 
 html {
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 .main-header {
@@ -256,7 +256,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: px 10%;
 }
 
 header {
@@ -285,7 +285,7 @@ button{
 }
 
 .cta:hover {
-    background-color: black;
+    background-color: #F9DB22;
 }
 
 .main_nav {
