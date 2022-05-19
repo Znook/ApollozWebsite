@@ -19,7 +19,8 @@ textarea {
     width: 100%;
     min-height: 65vh;
     padding: 2rem;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: #333;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@ textarea {
     position: relative;
 }
 
-.contact-form::before {
+/* .contact-form::before {
     content: "";
     position: absolute;
     width: 25px;
@@ -53,7 +54,7 @@ textarea {
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
-}
+} */
 
 form {
     padding: 2.3rem 2.2rem;
@@ -250,11 +251,11 @@ p {
 }
 
 html {
-    background-color: whitesmoke;
+    background-color: #333;
 }
 
 .main-header {
-    color: black;
+    color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -307,7 +308,7 @@ button{
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
 

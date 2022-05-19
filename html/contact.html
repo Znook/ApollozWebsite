@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
@@ -13,10 +13,10 @@
 </head>
 <body>
     <header class="main-header">
-    <img class="logo" src="/Images/ApollozLogo.png" width="200px" alt="logo">
+    <img class="logo" src="../Images/ApollozLogo.png" width="200px" alt="logo">
     <nav class="nav main_nav">
         <ul class="nav_links">
-            <li><a href="#">Services</a></li>
+            <li><a href="../html/index.html">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">About</a></li>
         </ul>
@@ -34,15 +34,15 @@
 
                 <div class="info">
                     <div class="information">
-                      <img src="/Images/phone.png" class="icon" alt="" />
+                      <img src="../Images/phone.png" class="icon" alt="Phone number" />
                       <p>555 555 555</p>
                     </div>
                     <div class="information">
-                      <img src="/Images/email.png" class="icon" alt="" />
+                      <img src="../Images/email.png" class="icon" alt="Email adress" />
                       <p>Someone@something.com</p>
                     </div>
                     <div class="information">
-                      <img src="/Images/location.png" class="icon" alt="" />
+                      <img src="../Images/location.png" class="icon" alt="Location" />
                       <p>Someplace</p>
                     </div>
                 </div>
@@ -64,25 +64,25 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form action="https://formsubmit.co/c5c433cd3f14a365716a5fa9fb86e7e6" method="POST" autocomplete="off">
+                <form action="" method="POST" autocomplete="off">
                     <h3 class="title">Contact us</h3>
                     <div class="input-container">
-                        <input type="name" id="Name" name="Name" class="input"/>
+                        <input type="name" id="Name" name="Name" class="input" required/>
                         <label for="">Name</label>
                         <span>Name</span>
                     </div>
                     <div class="input-container">
-                        <input type="Phone" id="Phone" name="Phone" class="input"/>
+                        <input type="Phone" id="Phone" name="Phone" class="input" required/>
                         <label for="">Phone</label>
                         <span>Phone</span>
                     </div>
                     <div class="input-container">
-                        <input type="Email" id="Email" name="Email" class="input"/>
+                        <input type="Email" id="Email" name="Email" class="input" required/>
                         <label for="">Email</label>
                         <span>Email</span>
                     </div>
                     <div class="input-container textarea">
-                        <textarea id="Message" name="Message" class="input"></textarea>
+                        <textarea id="Message" name="Message" class="input" required></textarea>
                         <label for="">Message</label>
                         <span>Message</span>
                       </div>
@@ -91,6 +91,6 @@
             </div>
         </div>
     </div>
-    <script src="/script/app.js"></script>
+    <script src="/ApollozWebsite/script/app.js"></script>
 </body>
 </html>
